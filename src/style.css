@@ -67,14 +67,14 @@ main .heading-div {
 
 h1 {
     padding-top: 20px;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     letter-spacing: 2px;
 }
 
 main .info-div {
     display: grid;
-    grid-template-columns: repeat(2, minmax(40%, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(40%, 300px));
     gap: 40px;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,7 @@ main .info-div {
 }
 
 .welcome-description h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 50px;
 }
 
@@ -103,7 +103,7 @@ main .info-div {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 40%));
     gap: 20px;
 }
 
@@ -114,7 +114,7 @@ main .info-div {
 }
 
 .card h4 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
@@ -134,7 +134,7 @@ main .info-div {
 }
 
 .menu-list img {
-    width: 400px;
+    max-width: 400px;
     height: 300px;
     border-radius: 20px;
 }
@@ -145,7 +145,8 @@ main .info-div {
 }
 
 form {
-    width: 600px;
+    width: 30%;
+    min-width: 350px;
     border: 1px solid rgb(62, 6, 75);
     border-radius: 20px;
     padding: 20px;
