@@ -34,6 +34,8 @@ function loadHomePage() {
     heading3.textContent = "Our chefs:";
     chefs.appendChild(heading3);
 
+    const cards = document.createElement("div");
+    cards.classList.add("cards");
     const card1 = document.createElement("div");
     card1.classList.add("card");
     const image1 = document.createElement("img");
@@ -47,7 +49,7 @@ function loadHomePage() {
     chefInfo1.appendChild(chefName1);
     chefInfo1.appendChild(aboutChef1);
     card1.appendChild(chefInfo1);
-    chefs.appendChild(card1);
+    cards.appendChild(card1);
 
     const card2 = document.createElement("div");
     card2.classList.add("card");
@@ -62,7 +64,8 @@ function loadHomePage() {
     chefInfo2.appendChild(chefName2);
     chefInfo2.appendChild(aboutChef2);
     card2.appendChild(chefInfo2);
-    chefs.appendChild(card2);
+    cards.appendChild(card2);
+    chefs.appendChild(cards);
 
     infoDiv.appendChild(chefs);
 
