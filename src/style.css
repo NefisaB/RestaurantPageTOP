@@ -44,11 +44,20 @@ h4 {
     font-size: 2rem;
 }
 
+.navBar ul li:hover {
+    text-decoration: underline;
+    color: rgba(62, 6, 75, 0.6);
+}
+
+.navBar ul li:active {
+    color: rgb(62, 6, 75);
+}
+
 main {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
     color: rgb(62, 6, 75);
 }
 
@@ -58,7 +67,7 @@ main .heading-div {
 
 h1 {
     padding-top: 20px;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -76,7 +85,7 @@ main .info-div {
 }
 
 .welcome-description h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 50px;
 }
 
@@ -89,7 +98,7 @@ main .info-div {
 
 .chefs h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .cards {
@@ -105,7 +114,7 @@ main .info-div {
 }
 
 .card h4 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     margin-bottom: 20px;
 }
 
@@ -113,6 +122,26 @@ main .info-div {
     width: 200px;
     border: 2px solid rgb(62, 6, 75);
     border-radius: 20px;
+}
+
+.menu-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
+    gap: 30px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.menu-list img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.menu-list h3 {
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
 form {
