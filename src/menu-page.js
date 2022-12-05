@@ -18,7 +18,7 @@ function loadMenuPage() {
         card.classList.add("image-card");
         const imageEl = document.createElement("img");
         imageEl.src = image.url;
-        imageEl.setAttribute("title", `Create by ${image.author} on Unsplah`);
+        imageEl.setAttribute("title", `Created by ${image.author} on Unsplah`);
         const title = document.createElement("h3");
         title.textContent = image.title;
         card.appendChild(imageEl);
